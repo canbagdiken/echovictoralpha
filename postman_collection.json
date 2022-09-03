@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "6e083bf3-a550-496d-9e76-6d34dfbd74b8",
+		"name": "EVA_casemail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6621345"
+	},
+	"item": [
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://echovictoralpha.herokuapp.com/getUsers",
+					"protocol": "https",
+					"host": [
+						"echovictoralpha",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"type\":\"buy\",\r\n\t\"user\":3,\r\n\t\"code\":\"ABC\",\r\n\t\"amount\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://echovictoralpha.herokuapp.com/trade",
+					"protocol": "https",
+					"host": [
+						"echovictoralpha",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sell",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"type\":\"sell\",\r\n\t\"user\":3,\r\n\t\"code\":\"ABC\",\r\n\t\"amount\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://echovictoralpha.herokuapp.com/trade",
+					"protocol": "https",
+					"host": [
+						"echovictoralpha",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setPrice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\":\"ABC\",\r\n    \"price\":1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://echovictoralpha.herokuapp.com/setPrice",
+					"protocol": "https",
+					"host": [
+						"echovictoralpha",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"setPrice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
