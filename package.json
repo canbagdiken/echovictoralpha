@@ -1,0 +1,21 @@
+{
+  "name": "eva",
+  "version": "1.0.0",
+  "description": "Super Traders by canBagdiken",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "canBagdiken",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.0.11"
+  }
+}
