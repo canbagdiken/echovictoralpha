@@ -187,11 +187,6 @@ router.post(
       
       
 
-      // console.log("gettt");
-      //console.dir(Object.getPrototypeOf(_type));
-      // console.dir(_shares.name);
-      // console.dir(_type);
-
       console.log(_type.totalvalue);
       if(req.body.amount === null || req.body.amount === undefined){
         req.body.amount = 0;
@@ -235,36 +230,10 @@ router.post(
       }
 
       return res.json(result);
-
-      return res.json(_shares);
-      return;
-      _shares = await _user.user_share({ where: { code: "ABC" } });
     }
 
-    return;
 
-    checkCurrentRatio = await User_Shares.count({
-      where: { code: req.body.code, user: req.body.user },
-    }).then(async (count) => {
-      if (count > 0) {
-        _user_shares = await User_Shares.findOne({
-          where: { code: req.body.code, user: req.body.user },
-        });
-        _user_shares.ratio =
-          parseFloat(_user_shares.ratio) + parseFloat(req.body.ratio);
-        _user_shares.save();
-      } else {
-        User_Shares.create({
-          user: req.body.user,
-          code: req.body.code,
-          ratio: req.body.ratio,
-        }).catch(function (err) {
-          return res.json({ status: false, msg: "wrong action" });
-        });
-      }
-
-      res.json({ status: true, msg: "share added successfully" });
-    });
+    
   }
 );
 
