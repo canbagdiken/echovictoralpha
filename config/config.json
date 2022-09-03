@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "123123",
-    "database": "eva",
-    "host": "127.0.0.1",
+    "username": "xcdhfiqa",
+    "password": "HzXNJqa_BudLUihWRq3-cr9OPcOL5fj2",
+    "database": "xcdhfiqa",
+    "host": "abul.db.elephantsql.com",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "postgres",
-    "password": "123123",
-    "database": "eva",
-    "host": "127.0.0.1",
+    "username": "xcdhfiqa",
+    "password": "HzXNJqa_BudLUihWRq3-cr9OPcOL5fj2",
+    "database": "xcdhfiqa",
+    "host": "abul.db.elephantsql.com",
     "dialect": "postgresql"
   },
   "production": {
-    "username": "postgres",
-    "password": "123123",
-    "database": "eva",
-    "host": "127.0.0.1",
+    "username": "xcdhfiqa",
+    "password": "HzXNJqa_BudLUihWRq3-cr9OPcOL5fj2",
+    "database": "xcdhfiqa",
+    "host": "abul.db.elephantsql.com",
     "dialect": "postgresql"
   }
 }
