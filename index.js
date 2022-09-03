@@ -299,6 +299,8 @@ router.get("/", async function (req, res) {});
 
 app.use("/", router);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, err => {
+    if(err) throw err;
+    console.log("%c Server running", "color: green");
 });
